@@ -28,6 +28,30 @@
                 </div>
                 <a href="" class="email">info@abbdavid.co</a>
             </div>
+            <script>
+                document.querySelector('.copy-email img').addEventListener('click', () => {
+                    navigator.clipboard.writeText('info@abbdavid.co').then(() => {
+                        const btn = document.querySelector('.copy');
+                        const wrapper = document.querySelector('.copy-email');
+                
+                        // Muestra COPIED!
+                        btn.style.opacity = '1';
+                        btn.textContent = 'COPIED!';
+                
+                        setTimeout(() => {
+                            // Oculta el botón y el copy-email
+                            btn.style.opacity = '0';
+                            btn.textContent = 'COPY';
+                            wrapper.style.opacity = '0';
+                
+                            // Vuelve al estado normal para que el hover funcione de nuevo
+                            setTimeout(() => {
+                                wrapper.style.opacity = '';
+                            }, 300);
+                        }, 1000);
+                    });
+                });
+            </script>
 
             <img src="/assets/img/stars.png" alt="">
             <h2>Available July 2026</h2>

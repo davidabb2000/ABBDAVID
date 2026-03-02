@@ -107,9 +107,11 @@ nav ul li a {
     font-family: "Bueno Regular";
     color: white;
     opacity: 0;
-    transition: opacity 0.3s ease;
+
     font-weight: 900;
     border-radius: 3px;
+    position: absolute;
+    top: 65%;
 }
 
 
