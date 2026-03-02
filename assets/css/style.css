@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Instrument Serif";
+    src: url("/assets/fonts/InstrumentSerif/InstrumentSerif-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Bueno Regular";
+    src: url("/assets/fonts/Bueno/Bueno-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(255, 244, 244);
+    color: black;
+    display: flex; /* Activa el modelo de caja flexible */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    justify-content: space-between; /* Espacia los elementos horizontalmente */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    height: 65px;
+    padding: 10px 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+    border-bottom: 2px solid red;
+    font-size: 25px;
+}
+
+
+/* Asegúrate de que los elementos dentro del header estén en línea */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaciado entre los elementos */
+}
+
+nav ul {
+    display: flex; /* Alinea los elementos del menú en una fila */
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 23px;
+    font-size: 23px;
+    font-family: "Instrument Serif";
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    font-family: "Bueno Regular";
+    font-size: 60px;
+    font-weight: 600;
+    color: red;
+    position: relative;
+    top: 5px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.email{
+    font-family: "Instrument Serif";
+    color: black;
+    font-size: 23px;
+}
+.email-wrapper{
+    display: flex;
+    position: relative;
+}
+.copy-email {
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+
+.copy-email img{
+    cursor: pointer;
+}
+
+.email-wrapper:hover .copy-email {
+    opacity: 1;
+}
+
+
+
+.email-wrapper button {
+    background-color: red;
+    border: none;
+    font-family: "Bueno Regular";
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-weight: 900;
+    border-radius: 3px;
+}
+
+
+.copy-email:hover button {
+    opacity: 1;
+}
+
+header h2{
+    font-family: "Instrument Serif";
+    font-weight: 100;
+    font-size: 25px;
+}
