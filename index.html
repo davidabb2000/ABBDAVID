@@ -2,62 +2,38 @@
 <html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@2026&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@2026&display=swap" rel="stylesheet">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABB David | Portfolio David Barrientos</title>
-    
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="texto-arriba">
-        <h1>ABB DAVID ABB DAVID</h1>
-    </div>
 
+    <div class="first-text">
+        <span>ABB DAVID ABB DAVID ABB DAVID</span>
+    </div>
 
     <header>
         <div class="header-left">
-            <a href="index.html" class="logo">ABB</a>
-            
+            <a href="index.html" class="logo" aria-label="ABB David - Home">ABB</a>
+
             <div class="email-wrapper">
                 <div class="copy-email">
-                    <img src="/assets/img/email.png" alt="">
-                    <button class="copy">COPY</button>
+                    <img src="/assets/img/email.png" alt="Copy email address">
+                    <button class="copy" aria-label="Copy email to clipboard">COPY</button>
                 </div>
-                <a href="" class="email">info@abbdavid.co</a>
+                <a href="mailto:info@abbdavid.co" class="email">info@abbdavid.co</a>
             </div>
-            <script>
-                document.querySelector('.copy-email img').addEventListener('click', () => {
-                    navigator.clipboard.writeText('info@abbdavid.co').then(() => {
-                        const btn = document.querySelector('.copy');
-                        const wrapper = document.querySelector('.copy-email');
-                
-                        // Muestra COPIED!
-                        btn.style.opacity = '1';
-                        btn.textContent = 'COPIED!';
-                
-                        setTimeout(() => {
-                            // Oculta el botón y el copy-email
-                            btn.style.opacity = '0';
-                            btn.textContent = 'COPY';
-                            wrapper.style.opacity = '0';
-                
-                            // Vuelve al estado normal para que el hover funcione de nuevo
-                            setTimeout(() => {
-                                wrapper.style.opacity = '';
-                            }, 300);
-                        }, 1000);
-                    });
-                });
-            </script>
 
             <img src="/assets/img/stars.png" alt="">
-            <h2>Available July 2026</h2>
-                <img src="" alt="">
+            <p class="availability">Available July 2026</p>
         </div>
-        <nav>
+
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="archive.html">Archive</a></li>
@@ -68,265 +44,225 @@
         </nav>
     </header>
 
-
     <main>
-        <div class="sect1">
-            <div class="video">
-                <video src="" alt="video"></video>
+        <section class="sect1" aria-label="Introduction">
+            <div class="video-container">
+                <div class="background-video"></div>
+                <video src="assets/vid/cyd.webm" aria-label="Introduction video" muted autoplay loop playsinline></video>
             </div>
 
             <div class="sect1-text">
-                <h1>Conference</h1>
-                <h1>Speaker</h1>
-                <p>I’m a creative developer & teacher from Amsterdam, the Netherlands. I create accessible, creative, award winning websites for individuals and companies.
-                    I teach the next generation of web developers at the Amsterdam University of Applied Sciences at the associate degree 
-                    
-                    We’re always looking for guest lecturers, contact us!
-                    Frontend Design & Development and the Minor Web Design & Development.</p>
-                
-                <img src="" alt="sticker1">
-                <img src="" alt="sticker2">
-                <img src="" alt="sticker3">
+                <h1>Conference <em>Speaker</em></h1>
+                <p>I'm a creative developer & teacher from Amsterdam, the Netherlands. I create accessible, creative, award winning websites for individuals and companies.
+                    <br><br>
+                    I teach the next generation of web developers at the Amsterdam University of Applied Sciences at the associate degree
+                    <a href="">Frontend Design & Development</a> and the <a href="">Minor Web Design & Development.</a>
+                </p>
 
-                <div class="sect1-right-text">
-                    <h4>Next speaking event: 29 July 2026</h4>
-                    <button>JS HEROES</button>
-                </div>
-            </div>
-        </div>
-    
-        <section class="sect2">
-            <a href=""><img src="" alt="De visdeurbel"></a>
-            <a href=""><img src="" alt="Ray Charles"></a>
-            <p>From Mockup from Hamid Sallali's workStudio <a href="">Sallalismall studio’s</a> and Portrait of Sophie ZwartkruisSophie Zwartkruis <a href="">freelancers</a> to People standing around a table laughing BROED campaigns and A producer? from Talpa showing something on his phone to a colleague Talpa Studios large international companies, I create websites for all of them.</p>
-            <button>ALL WORK</button>
+                <img src="" alt="Sticker 1" role="presentation">
+                <img src="" alt="Sticker 2" role="presentation">
+                <img src="" alt="Sticker 3" role="presentation">
 
-            <a href=""><img src="" alt="Sophie"></a>
-            <a href=""><img src="" alt="Broed"></a>
-        </section>
-
-        <section class="sect3">
-            <h1>Latest Blogs</h1>
-
-            <div>
-                <h6>December 12, 2026</h6>
-
-                <button>CSS</button>
-                <button>JS</button>
-
-                <h1>WHY WE TEACH OUR STUDENTS PROGRESSIVE ENHANCEMENT</h1>
-                
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-
-                <button>52 WEBMENTIONS</button>
-            </div>
-
-            <div>
-                <h6>December 12, 2026</h6>
-
-                <button>CSS</button>
-                <button>JS</button>
-
-                <h1>WHY WE TEACH OUR STUDENTS PROGRESSIVE ENHANCEMENT</h1>
-                
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-
-                <button>52 WEBMENTIONS</button>
-            </div>
-
-            <div>
-                <h6>December 12, 2026</h6>
-
-                <button>CSS</button>
-                <button>JS</button>
-
-                <h1>WHY WE TEACH OUR STUDENTS PROGRESSIVE ENHANCEMENT</h1>
-                
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-
-                <button>52 WEBMENTIONS</button>
-            </div>
-
-            <div>
-                <h6>December 12, 2026</h6>
-
-                <button>CSS</button>
-                <button>JS</button>
-
-                <h1>WHY WE TEACH OUR STUDENTS PROGRESSIVE ENHANCEMENT</h1>
-                
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-
-                <button>52 WEBMENTIONS</button>
-            </div>
-
-            <div>
-                <h6>December 12, 2026</h6>
-
-                <button>CSS</button>
-                <button>JS</button>
-
-                <h1>WHY WE TEACH OUR STUDENTS PROGRESSIVE ENHANCEMENT</h1>
-                
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-
-                <button>52 WEBMENTIONS</button>
-            </div>
-
-            <div>
-                <h6>December 12, 2026</h6>
-
-                <button>CSS</button>
-                <button>JS</button>
-
-                <h1>WHY WE TEACH OUR STUDENTS PROGRESSIVE ENHANCEMENT</h1>
-                
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-
-                <button>52 WEBMENTIONS</button>
+                <aside class="sect1-right-text">
+                    <span>Next speaking event: <time datetime="2026-07-29">29 July 2026</time></span>
+                    <a href="" class="event-btn">JS HEROES</a>
+                </aside>
             </div>
         </section>
 
-        <section class="sect4">
-            <div>
-                <button>
-                    <h1>WEB DEVELOPMENT</h1>
+        <section class="sect2" aria-label="Selected work">
+            <a href="" class="grid1"><img src="assets/img/visdeurbel.webp" alt="De visdeurbel project" class="sect2-img1"></a>
+            <a href="" class="grid1-1"><img src="assets/img/raycharles.webp" alt="Ray Charles project" class="sect2-img2"></a>
+            <p>From <a href="">small studio's</a> and <a href="">freelancers</a> to <a href="">campaigns</a> and <a href="">large international companies</a>, I create websites for all of them.</p>
+            <a href="archive.html" class="sect-btn">ALL WORK</a>
 
-                    <img src="" alt="">
+            <a href="" class="grid2"><img src="" alt="Sophie Zwartkruis portrait"></a>
+            <a href="" class="grid2-2"><img src="" alt="Broed campaign"></a>
+        </section>
 
-                    <button></button>
-                    <button></button>
-                    <button></button>
+        <section class="sect3" aria-label="Latest blog posts">
+            <h2>Latest Blogs</h2>
 
-                </button>
-            </div>
+            <article>
+                <time datetime="2026-12-12">December 12, 2026</time>
+                <ul class="tags">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JS</a></li>
+                </ul>
+                <h3><a href="">Why We Teach Our Students Progressive Enhancement</a></h3>
+                <ul class="avatars" aria-label="People who reacted"></ul>
+                <a href="" class="webmentions">52 WEBMENTIONS</a>
+            </article>
 
-            <div>
-                <button>
-                    <h1>WEB DEVELOPMENT</h1>
-                    
-                    <img src="" alt="">
+            <article>
+                <time datetime="2026-12-12">December 12, 2026</time>
+                <ul class="tags">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JS</a></li>
+                </ul>
+                <h3><a href="">Why We Teach Our Students Progressive Enhancement</a></h3>
+                <ul class="avatars" aria-label="People who reacted"></ul>
+                <a href="" class="webmentions">52 WEBMENTIONS</a>
+            </article>
 
-                    <button></button>
-                    <button></button>
-                    <button></button>
+            <article>
+                <time datetime="2026-12-12">December 12, 2026</time>
+                <ul class="tags">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JS</a></li>
+                </ul>
+                <h3><a href="">Why We Teach Our Students Progressive Enhancement</a></h3>
+                <ul class="avatars" aria-label="People who reacted"></ul>
+                <a href="" class="webmentions">52 WEBMENTIONS</a>
+            </article>
 
-                </button>
-            </div>
+            <article>
+                <time datetime="2026-12-12">December 12, 2026</time>
+                <ul class="tags">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JS</a></li>
+                </ul>
+                <h3><a href="">Why We Teach Our Students Progressive Enhancement</a></h3>
+                <ul class="avatars" aria-label="People who reacted"></ul>
+                <a href="" class="webmentions">52 WEBMENTIONS</a>
+            </article>
 
-            <div>
-                <button>
-                    <h1>WEB DEVELOPMENT</h1>
-                    
-                    <img src="" alt="">
+            <article>
+                <time datetime="2026-12-12">December 12, 2026</time>
+                <ul class="tags">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JS</a></li>
+                </ul>
+                <h3><a href="">Why We Teach Our Students Progressive Enhancement</a></h3>
+                <ul class="avatars" aria-label="People who reacted"></ul>
+                <a href="" class="webmentions">52 WEBMENTIONS</a>
+            </article>
 
-                    <button></button>
-                    <button></button>
-                    <button></button>
+            <article>
+                <time datetime="2026-12-12">December 12, 2026</time>
+                <ul class="tags">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JS</a></li>
+                </ul>
+                <h3><a href="">Why We Teach Our Students Progressive Enhancement</a></h3>
+                <ul class="avatars" aria-label="People who reacted"></ul>
+                <a href="" class="webmentions">52 WEBMENTIONS</a>
+            </article>
+        </section>
 
-                </button>
-            </div>
+        <section class="sect4" aria-label="Services">
+            <h2 class="visually-hidden">Services</h2>
+
+            <article>
+                <h3>WEB DEVELOPMENT</h3>
+                <img src="" alt="">
+                <ul class="service-tags">
+                    <li><a href="">Tag 1</a></li>
+                    <li><a href="">Tag 2</a></li>
+                    <li><a href="">Tag 3</a></li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>WEB DEVELOPMENT</h3>
+                <img src="" alt="">
+                <ul class="service-tags">
+                    <li><a href="">Tag 1</a></li>
+                    <li><a href="">Tag 2</a></li>
+                    <li><a href="">Tag 3</a></li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>WEB DEVELOPMENT</h3>
+                <img src="" alt="">
+                <ul class="service-tags">
+                    <li><a href="">Tag 1</a></li>
+                    <li><a href="">Tag 2</a></li>
+                    <li><a href="">Tag 3</a></li>
+                </ul>
+            </article>
         </section>
     </main>
 
     <footer>
-        <h1>ABB</h1>
-        <h2>
-            Work days <br> Tuesday-Friday <br> Teaching <br> Monday
-        </h2>
-        <h2>
-            Available July 2026 <br> Have a project in mind? <a href="">info@abbdavidd.co</a>
-        </h2>
+        <p class="footer-logo">ABB</p>
 
-        <div class="footer-left">
+        <address>
+            Work days <br> Tuesday–Friday <br> Teaching <br> Monday
+        </address>
+
+        <p>
+            Available July 2026 <br>
+            Have a project in mind? <a href="mailto:info@abbdavid.co">info@abbdavid.co</a>
+        </p>
+
+        <nav class="footer-left" aria-label="Footer navigation">
             <ul>
-                <li>
-                    <a href="about.html">About</a>
-                    <a href="archive.html">Archive</a>
-                    <a href="blogs.html">Blogs</a>
-                    <a href="speaking.html">Speaking</a>
-                    <a href="contact.html">Contact</a>
-                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="archive.html">Archive</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="speaking.html">Speaking</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <div class="footer-right">
+        <nav class="footer-right" aria-label="Social media links">
             <ul>
-                <li>
-                    <a href="">Github</a>
-                    <a href="">Codepen</a>
-                    <a href="">Bluesky</a>
-                    <a href="">Mastodon</a>
-                    <a href="">Instagram</a>
-                    <a href="">Linkedln</a>
-                    <a href="">RSS</a>
-                </li>
+                <li><a href="" rel="noopener">Github</a></li>
+                <li><a href="" rel="noopener">Codepen</a></li>
+                <li><a href="" rel="noopener">Bluesky</a></li>
+                <li><a href="" rel="noopener">Mastodon</a></li>
+                <li><a href="" rel="noopener">Instagram</a></li>
+                <li><a href="" rel="noopener">LinkedIn</a></li>
+                <li><a href="" rel="noopener">RSS</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <div class="texto-abajo">
-            <h1>ABB DAVID ABB DAVID</h1>
+        <div class="texto-abajo" aria-hidden="true">
+            <span>ABB DAVID ABB DAVID</span>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.copy-email img').addEventListener('click', () => {
+            navigator.clipboard.writeText('info@abbdavid.co').then(() => {
+                const btn = document.querySelector('.copy');
+                const wrapper = document.querySelector('.copy-email');
+
+                btn.style.opacity = '1';
+                btn.textContent = 'COPIED!';
+
+                setTimeout(() => {
+                    btn.style.opacity = '0';
+                    btn.textContent = 'COPY';
+                    wrapper.style.opacity = '0';
+
+                    setTimeout(() => {
+                        wrapper.style.opacity = '';
+                    }, 300);
+                }, 1000);
+            });
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        if (!CSS.supports('animation-timeline', 'scroll()')) {
+            gsap.to('.first-text', {
+                scrollTrigger: { scrub: true, start: 'top top', end: '+=400' },
+                x: -400, fontSize: '80px'
+            });
+
+            gsap.to('header', {
+                scrollTrigger: { scrub: true, start: 'top top', end: '+=400' },
+                top: -250
+            });
+        }
+    </script>
+
 </body>
 </html>
